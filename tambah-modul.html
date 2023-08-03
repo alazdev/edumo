@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Edumo | ${title}</title>
+
+    <link href="./assets/bootstrap-5.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Edumo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./daftar-modul.html">Daftar Modul</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./tambah-modul.html">Tambah Modul</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav -->
+    </header>
+    <!-- Header -->
+
+    <!-- Main -->
+    <main class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">Tambah Modul</h3>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" action="">
+                            <div class="form-group">
+                                <label for="name">Nama<span class="text-danger">*</span></label>
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Masukan Nama Modul" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="image">Gambar<span class="text-danger">*</span></label>
+                                <input type="file" name="image" class="form-control" id="image" required>
+                            </div>
+                            <div class="form-group mt-2">
+                                <label for="category">Kategori<span class="text-danger">*</span></label>
+                                <select name="category" class="form-control" id="">
+                                    <option>-- Pilih Kategori --</option>
+                                    <option value="">Kategori 1</option>
+                                    <option value="">Kategori 2</option>
+                                    <option value="">Kategori 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Deskripsi<span class="text-danger">*</span></label>
+                                <textarea class="form-control" name="description id="" cols="30" rows="5"></textarea>
+                            </div>
+                            <div class="form-group text-end mt-3">
+                                <a href="#" class="btn btn-outline-primary" style="margin-right: 10px;">+ Tambah Modul</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Main -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+        <!-- Copyright -->
+        <div class="text-center p-2 text-truncate" style="background-color: rgba(0, 0, 0, 0.025)">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="https://github.com/alazdev/edumo">Kelompok 11 IT-204</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- Script -->
+    <script src="./assets/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script -->
+</body>
+</html>
