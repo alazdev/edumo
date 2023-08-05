@@ -71,10 +71,30 @@
                                     <option value="">Kategori 3</option>
                                 </select>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group mt-2">
                                 <label for="description">Deskripsi<span class="text-danger">*</span></label>
                                 <textarea class="form-control" name="description id="" cols="30" rows="5"></textarea>
                             </div>
+
+                            <div class="form-group mt-2">
+                                <label for="materi">Materi<span class="text-danger">*</span></label>
+                                <div class="form-control btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btncheck1">TIK</label>
+                                  
+                                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btncheck2">Bahasa Inggris</label>
+                                  
+                                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btncheck3">Pancasila</label>
+                                  </div>
+                            </div>
+
+                            <div class="form-group mt-2">
+                                <label for="sub_modul">Sub Modul<span class="text-danger">*</span> <a href="javascript::void(0)" onclick="addSubModul()">(+ Tambah)</a></label>
+                                <input type="text" name="sub_modul[]" placeholder="Masukan Sub Modul" class="form-control" required>
+                            </div>
+
                             <div class="form-group text-end mt-3">
                                 <a href="#" class="btn btn-primary" style="margin-right: 10px;">+ Tambah Modul</a>
                             </div>
@@ -85,6 +105,16 @@
         </div>
     </main>
     <!-- Main -->
+
+    <script>
+        function addSubModul() {
+            let subModul = document.querySelector('input[name="sub_modul[]"]');
+            let newSubModul = subModul.cloneNode(true);
+            newSubModul.classList.add('mt-2');
+            newSubModul.value = '';
+            subModul.parentNode.insertBefore(newSubModul, subModul.nextSibling);
+        }
+    </script>
 
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-white text-muted">
