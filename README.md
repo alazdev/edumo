@@ -14,4 +14,4 @@ Edumo diperuntukkan untuk memenuhi ujian akhir semester (UAS) mata kuliah Pemogr
 
 - Anggota 3<br>Nama: I Made Nugrahe Jaye Putra<br>NIM: 220401070407<br>Kelas: IT-204<br>PIC: daftar-modul.html
 
-- Anggota 4<br>Nama: M. Ichsan Fauzan<br>NIM: 220401070402<br>Kelas: IT-204<br>PIC: detail.html
+- Anggota 4<br>Nama: M. Ichsan Fauzan<br>NIM: 220401010153<br>Kelas: IT-204<br>PIC: detail.html
